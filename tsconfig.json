@@ -7,7 +7,10 @@
         "noUncheckedIndexedAccess": true,
         "noUnusedParameters": true,
         "strict": true,
-        "target": "ES2019",
-        "moduleResolution": "node"
+        "module": "CommonJS", // instead of  "module": "ESNext", as it is described on  https://grammy.dev/hosting/heroku#prerequisites
+        "target": "ESNEXT",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "skipLibCheck": true
     }
 }
